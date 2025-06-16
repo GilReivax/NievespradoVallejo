@@ -81,6 +81,28 @@ nav ul {
   transform: scale(1.5);
 }
 
+.galeria2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 150px;
+  max-width: 900px;
+  margin: auto;
+	 
+}
+
+.galeria2 div {
+  text-align: center;	
+}
+
+.galeria2 img {
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.galeria2 img:hover {
+  transform: scale(1.2);
+}
+
 footer {
   background-color: #ec407a;
   color: white;
@@ -91,4 +113,52 @@ footer {
 .nosotros{ text-align: center;
 	margin-left: 100px;
 	margin-right: 100px;
+	margin-bottom: 70px;
+	margin-top: 40px;
+}
+
+  h2 {
+    text-align: center;
+	 margin-bottom: 30px; 
+	  margin-top: 30px; 
+  }
+
+.info-contacto { text-align: center;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .galeria,
+  .galeria2 {
+    gap: 30px;
+  }
+
+  .galeria img,
+  .galeria2 img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .nosotros,
+  .info-contacto {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }

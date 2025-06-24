@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Foro Comunidad Nieves Prado</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+header {
+  position: relative;
+  background-color: #ec407a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+}
+
+/* LOGO IZQUIERDA */
+.logo img {
+  height: 70px;
+}
+
+/* CENTRO: TÍTULO Y SUBTÍTULO */
+.header-center {
+  flex: 1;
+  text-align: center;
+	margin-left: 400px;
+}
+
+.titulo-header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.titulo-header p {
+  margin: 5px 0 0;
+  font-size: 1em;
+}
+
+/* NAV A LA DERECHA */
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav .nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.header-nav .nav-link:hover {
+  background-color: #d81b60;
+  transform: scale(1.05);
+}
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .post {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .post h2 {
+      margin-top: 0;
+    }
+
+    .post .meta {
+      font-size: 0.9em;
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    .post p {
+      line-height: 1.6;
+    }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #ec407a; /* Puedes cambiar el color */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-center {
+  text-align: center;
+	color: white;
+	margin-top: 50px;
+	margin-left: 100px;
+}
+.footer-left, .footer-right {
+  max-width: 45%;
+}
+
+.footer-right {
+  text-align: right;
+	color: white;
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="img/logonieves 1.png" alt="Nieves Prado Vallejo" />
+    </a>
+  </div>
+
+  <div class="header-center">
+    <div class="titulo-header">
+      <h1>Comunidad Nieves Prado</h1>
+      <p>Comparte tus experiencias, preguntas y sugerencias</p>
+    </div>
+  </div>
+
+  <nav class="header-nav">
+    <ul>
+      <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+      <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+      <li><a href="productos.html" class="nav-link">Productos</a></li>
+      <li><a href="galeria.html" class="nav-link">Galería</a></li>  
+      <li><a href="blog.html" class="nav-link">Blog</a></li> 
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <div class="post">
+      <h2>¿Cuál es tu sabor favorito?</h2>
+      <div class="meta">Publicado por <strong>Lupita</strong> el 24 de junio de 2025</div>
+      <p>Me encanta el sabor de mango con chamoy, es único y refrescante. ¿Alguien más lo ha probado?</p>
+    </div>
+
+    <div class="post">
+      <h2>¡Nuevas promociones en Prado Vallejo!</h2>
+      <div class="meta">Publicado por <strong>Administrador</strong> el 23 de junio de 2025</div>
+      <p>Estamos felices de anunciar que todos los martes tendremos 2x1 en nieves tradicionales. ¡No te lo pierdas!</p>
+    </div>
+
+    <div class="post">
+      <h2>Sugerencia: más opciones sin azúcar</h2>
+      <div class="meta">Publicado por <strong>Oscar G.</strong> el 22 de junio de 2025</div>
+      <p>Sería excelente que incluyeran más sabores sin azúcar. Conozco a muchos que lo agradecerían.</p>
+    </div>
+	  
+	      <div class="post">
+      <h2>Sugerencia: más variedad</h2>
+      <div class="meta">Publicado por <strong>Martin P.</strong> el 8 de julio de 2025</div>
+      <p>Deberían de tener más variedad de helados, vender paletas ayudaría bastante</p>
+    </div>
+  </main>
+
+<footer>
+  <div class="footer-left">
+    <img src="img/logonieves 1.png" alt="Logo de Nieves Prado Vallejo" style="height: 100px;">
+  </div>
+
+  <div class="footer-center">
+    <p>&copy; 2025 Nieves Prado Vallejo<br>
+      Tlalnepantla de Baz, Prado Vallejo, Boulevard Isla de la Concepción</p>
+  </div>
+
+  <div class="footer-right">
+    <p><a href="tel:+525540296529">55 4029 6529</a></p>
+    <p>
+      <a href="https://www.tiktok.com/@pradovallejonieves" target="_blank">
+        <img src="img/tiktok1.png" alt="TikTok" style="height: 40px; vertical-align: middle; margin-right: 6px;"> @NievesPradoVallejo 
+        
+      </a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>
